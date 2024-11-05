@@ -29,10 +29,10 @@ class _BottomNavbarState extends State<BottomNavbar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("My Ticketing App"),
-        backgroundColor: Colors.red[100],
-      ),
+      // appBar: AppBar(
+      //   title: const Text("My Ticketing App"),
+      //   backgroundColor: Colors.red[100],
+      // ),
       body: appScreens[_selectedIndex],
 
       bottomNavigationBar: BottomNavigationBar(
