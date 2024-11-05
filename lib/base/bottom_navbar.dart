@@ -1,5 +1,6 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:ticket_app/res/styles/app_styles.dart';
 import 'package:ticket_app/screens/home_screen.dart';
 
 class BottomNavbar extends StatefulWidget {
@@ -29,17 +30,13 @@ class _BottomNavbarState extends State<BottomNavbar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text("My Ticketing App"),
-      //   backgroundColor: Colors.red[100],
-      // ),
       body: appScreens[_selectedIndex],
 
       bottomNavigationBar: BottomNavigationBar(
         onTap: _onItemTapped,
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blueGrey,
-        unselectedItemColor: Colors.blueGrey,
+        selectedItemColor: AppStyles.iconColor,
+        unselectedItemColor: AppStyles.iconColor,
         showSelectedLabels: false,
         items: const [
           BottomNavigationBarItem(
